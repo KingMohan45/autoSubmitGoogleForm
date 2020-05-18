@@ -1,0 +1,19 @@
+{
+
+  "description": "Auto form submission",
+  "manifest_version": 2,
+  "name": "autoSubmit",
+  "version": "1.0",
+  "homepage_url": "https://github.com/kingmohan45",
+  "icons": {
+    "48": "icons/g17.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://docs.google.com/forms/d/e/*"],
+      "js": ["submitForm.js"]
+    }
+  ]
+
+}
